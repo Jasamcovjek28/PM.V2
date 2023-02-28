@@ -1,0 +1,20 @@
+body {
+        background-color: #333333;
+        background-image: linear-gradient(to right, #7e54c1, #e1bee7);
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+      }
+.content .title{
+  font-size: 37px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.content p{
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+}
+h4 {
+    color: #000;
+    size: 40px;
+}

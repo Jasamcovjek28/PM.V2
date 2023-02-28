@@ -1,0 +1,90 @@
+/* Form container */
+.form-container {
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Form labels */
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Form inputs */
+.form-container input,
+.form-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Form submit button */
+.form-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Checkbox label */
+.checkbox-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Checkbox input */
+.checkbox-input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Shipping options */
+.shipping-options {
+  margin-bottom: 20px;
+}
+
+/* Shipping options label */
+.shipping-options-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Shipping options radio inputs */
+.shipping-options input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Additional description */
+.additional-description {
+  margin-bottom: 20px;
+}
+
+/* Additional description label */
+.additional-description-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Additional description input */
+.additional-description-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}

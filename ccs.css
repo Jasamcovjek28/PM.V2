@@ -1,0 +1,111 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Apply global styles to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Set up the menu wrapper */
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  /* Remove the closing comment symbol at the end of this line */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Change the clip path when the menu is active */
+#active:checked ~ .wrapper {
+  clip-path: circle(75%);
+}
+input[type="checkbox"]{
+  display: none;
+}
+/* Style the menu button */
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Change the button style when the menu is active */
+#active:checked ~ .menu-btn {
+  background: #fff;
+  color: #4158d0;
+}
+
+/* Change the icon to an "x" when the menu is active */
+#active:checked ~ .menu-btn i:before {
+  content: "\f00d";
+}
+
+/* Set up the list inside the menu */
+.wrapper ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Style the list items */
+.wrapper ul li {
+  margin: 15px 0;
+}
+
+/* Style the links in the list items */
+.wrapper ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Add a background effect to the links on hover */
+.wrapper ul li a:after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Change the background effect when hovering over a link */
+.wrapper ul li a:hover:after {
+  transform: scaleY(1);
+}
+
+/* Change the link color when hovering over a link

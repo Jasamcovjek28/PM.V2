@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form id="order-form" action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Narudžba Artikla</h3>
+                <h2>Cijena Dostave: 8KM</h2>
+<p>Naziv Artikla: <span id="product-name"></span></p>
+<p>Kolićina Artikala: <span id="product-quantity"></span></p>
+<p>Cijena: <span id="product-price"></span></p>
+                <div class="inputBox">
+                    <span>Ime i Prezime:</span>
+                    <input type="text" placeholder="Ime I Prezime" required pattern=".{3,}" name="name" required>
+                </div>
+                <div class="inputBox">
+                    <span>Adresa :</span>
+                    <input type="text" placeholder="Vaša Adresa" pattern=".{3,}" name="adress" required>
+                </div>
+                <div class="inputBox">
+                    <span>Grad :</span>
+                    <input type="text" placeholder="Grad" pattern=".{3,}" name="city" required>
+                </div>
+
+                <div class="flex">
+  <div class="inputBox">
+    <span>Poštanski Broj :</span>
+    <input type="tel" placeholder="Poštanski Broj"pattern=".{3,}" name="postal_code" required>
+  </div>
+  <div class="inputBox">
+    <span>Broj Telefona</span>
+    <input type="tel" placeholder="Broj Telefona" pattern=".{4,}" name="phone_number" required>
+  </div>
+</div>
+
+<div class="inputBox">
+  <span>Promo Code</span>
+  <input type="text" placeholder="JQXKLOQACV" pattern=".{10,}" name="promo_code">
+</div>
+                        <h1>Da li se slažete Da ako ne preuzmete naš paket i ako nam kurir vrati paket koji ste svojevoljno narucili da cemo odraditi prijavu na vaše podatke / IP Adresu!</h1>
+                    </div>
+                 <input type="submit" value="Prihvaćam, Pošaljite mi paket" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="order.js"></script>
+</html>

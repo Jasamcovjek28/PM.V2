@@ -1,0 +1,24 @@
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var confirmPassword = document.getElementById("confirm-password").value;
+
+  // Check if the password and password confirmation match
+  if (password !== confirmPassword) {
+    alert("Passwords do not match");
+    return false;
+  }
+
+  // Check if the email is valid and ends with "@gmail.com"
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email) || !email.endsWith("@gmail.com")) {
+    alert("Invalid email address");
+    return false;
+  }
+
+  // Submit the form
+  return true;
+}
+</script>
